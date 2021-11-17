@@ -65,3 +65,10 @@ osc(40, 0.09, 0.9)
 
 render(o0)
 ```
+```
+voronoi(20,-0.1,50)
+.add(osc(1,0,1)).kaleid(3)
+.scale(1,1,2).colorama().out(o1)
+src(o1).mult(src(s0).modulateRotate(o1,100), -0.5)
+  .out(o0)
+```
